@@ -1,0 +1,181 @@
+/* Ensure the entire page has the Jeopardy blue background */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #000080; /* Jeopardy blue */
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  font-family: Impact, "Arial Black", sans-serif; /* Bold, clean fonts */
+  background-color: #000080; /* Jeopardy blue background */
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px; /* Larger title size */
+  margin: 20px 0;
+  text-transform: uppercase; /* Full uppercase for Jeopardy style */
+}
+
+.modal {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background-color: #0000cd;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1e90ff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+/* Modal overlay */
+.custom-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal container */
+.custom-modal {
+  background: #00274d;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 600px;
+  max-width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Modal title */
+.modal-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form styles */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team-section {
+  margin-bottom: 20px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-field {
+  padding: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #00274d;
+  font-size: 14px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.member-input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-member-button,
+.delete-member-button,
+.save-button,
+.cancel-button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-member-button {
+  background: #ffcc00;
+  color: #00274d;
+}
+
+.add-member-button:hover {
+  background: #ffd700;
+}
+
+.delete-member-button {
+  background: #ff4d4d;
+  color: #ffffff;
+  border: none;
+}
+
+.delete-member-button:hover {
+  background: #ff6666;
+}
+
+.save-button {
+  background: #4caf50;
+  color: #ffffff;
+  border: none;
+}
+
+.save-button:hover {
+  background: #45a049;
+}
+
+.cancel-button {
+  background: #ff4d4d;
+  color: #ffffff;
+  border: none;
+}
+
+.cancel-button:hover {
+  background: #ff6666;
+}
